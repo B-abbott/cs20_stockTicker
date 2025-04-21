@@ -10,7 +10,7 @@ const dbName = 'Stock';
 const collectionName = 'PublicCompanies';
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,'home.html'));
+  res.sendFile(path.join(__dirname,'index.html'));
 });
 
 app.get('/process', async (req, res) => {

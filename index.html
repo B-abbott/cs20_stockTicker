@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Stock Search</title>
+</head>
+<body>
+  <h1>Search for a Company</h1>
+  <form method="GET" action="/process">
+    <input type="text" name="query" required>
+    <br>
+    <input type="radio" id="ticker" name="searchBy" value="ticker" checked>
+    <label for="ticker">Ticker</label>
+    <input type="radio" id="name" name="searchBy" value="name">
+    <label for="name">Company Name</label>
+    <br><br>
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>

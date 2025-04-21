@@ -3,14 +3,14 @@ const path = require('path');
 const { MongoClient } = require('mongodb');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-const mongoUri = 'mongodb+srv://bradkabbott:bradisdabest@cs-20-cluster.yicdg.mongodb.net/?retryWrites=true&w=majority';
+const mongoUri = process.env.MONGO_URI;
 const dbName = 'Stock';
 const collectionName = 'PublicCompanies';
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'home.html'));
+  res.sendFile(path.join(__dirname,'home.html'));
 });
 
 app.get('/process', async (req, res) => {

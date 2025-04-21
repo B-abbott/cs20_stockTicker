@@ -1,0 +1,16 @@
+{
+    "name": "stock-ticker-app",
+    "version": "1.0.0",
+    "description": "A stock ticker search web app with MongoDB backend",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongodb": "^5.7.0"
+    }
+  }
